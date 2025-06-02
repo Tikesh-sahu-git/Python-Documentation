@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav id="navbar">
+        <header>Python Documentation</header>
+        <ul>
+            <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+            <li><a class="nav-link" href="#Getting_Started">Getting Started</a></li>
+            <li><a class="nav-link" href="#Variables_and_Data_Types">Variables and Data Types</a></li>
+            <li><a class="nav-link" href="#Control_Flow">Control Flow</a></li>
+            <li><a class="nav-link" href="#Functions">Functions</a></li>
+        </ul>
+    </nav>
+
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <p>Python is a high-level, interpreted programming language known for its simplicity and readability.</p>
+            <p>Created by Guido van Rossum and first released in 1991, Python has become one of the most popular programming languages worldwide.</p>
+            <p>Key features of Python include:</p>
+            <ul>
+                <li>Easy-to-learn syntax</li>
+                <li>Cross-platform compatibility</li>
+                <li>Extensive standard library</li>
+                <li>Support for multiple programming paradigms</li>
+            </ul>
+            <code>print("Hello, World!")</code>
+        </section>
+
+        <section class="main-section" id="Getting_Started">
+            <header>Getting Started</header>
+            <p>To start programming in Python, you'll need to install the Python interpreter on your computer.</p>
+            <p>Here are the basic steps to get started:</p>
+            <ol>
+                <li>Download Python from the official website</li>
+                <li>Run the installer</li>
+                <li>Verify the installation</li>
+            </ol>
+            <p>After installation, you can run Python code in several ways:</p>
+            <code>>>> python --version
+Python 3.9.0</code>
+            <p>You can use the interactive shell, write scripts, or use an IDE like PyCharm or VS Code.</p>
+        </section>
+
+        <section class="main-section" id="Variables_and_Data_Types">
+            <header>Variables and Data Types</header>
+            <p>Python has several built-in data types:</p>
+            <ul>
+                <li>Numbers (int, float, complex)</li>
+                <li>Strings</li>
+                <li>Booleans</li>
+                <li>Lists</li>
+                <li>Tuples</li>
+                <li>Dictionaries</li>
+            </ul>
+            <p>Variables are created when you assign a value to them:</p>
+            <code>x = 5           # int
+y = "Hello"     # str
+z = [1, 2, 3]   # list</code>
+            <p>Python is dynamically typed, so you don't need to declare variable types.</p>
+        </section>
+
+        <section class="main-section" id="Control_Flow">
+            <header>Control Flow</header>
+            <p>Python supports the usual control flow statements found in other languages:</p>
+            <code>if x < 0:
+    print("Negative")
+elif x == 0:
+    print("Zero")
+else:
+    print("Positive")</code>
+            <p>Looping in Python can be done with <code>for</code> and <code>while</code> statements:</p>
+            <code>for i in range(5):
+    print(i)
+
+while x > 0:
+    print(x)
+    x -= 1</code>
+            <p>Python also supports <code>break</code>, <code>continue</code>, and <code>else</code> clauses in loops.</p>
+        </section>
+
+        <section class="main-section" id="Functions">
+            <header>Functions</header>
+            <p>Functions are defined using the <code>def</code> keyword:</p>
+            <code>def greet(name):
+    """This function greets the person passed in"""
+    print("Hello, " + name + "!")
+
+greet("Alice")</code>
+            <p>Functions can return values using the <code>return</code> statement:</p>
+            <code>def square(x):
+    return x * x
+
+result = square(4)  # returns 16</code>
+            <p>Python functions support:</p>
+            <ul>
+                <li>Default arguments</li>
+                <li>Keyword arguments</li>
+                <li>Variable-length arguments</li>
+                <li>Anonymous (lambda) functions</li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
